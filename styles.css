@@ -604,5 +604,21 @@ footer .mobile {
     }
 }
 @media screen and (max-width: 480px) { /* MOBILER */
-
+    body {
+        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
+    }
+}
+@media screen and (max-width: 420px) { /* MOBILEST */
+    .rights {
+        display: none;
+    }
+    footer {
+        justify-content: end;
+    }
+    header {
+        font: 35px TypekaMix;
+    }
+    body {
+        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/420%
+    }
 }
