@@ -135,7 +135,7 @@ div .musicpage {
     display: flex;
     flex-direction: column;
     font: 100% OpenDyslexic;
-    gap: 30vw;
+    gap: 40vh;
     padding: 13% 5% 15% 13%;
 }
 div .musicpage figure {
