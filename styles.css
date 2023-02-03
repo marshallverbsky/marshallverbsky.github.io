@@ -102,6 +102,7 @@ h2 {
 p {
     font: 1rem OpenDyslexic;
     color: white;
+    margin: 10%;
 }
 .textbox {
     background-color: rgba(0, 0, 0, 0.5);
@@ -118,6 +119,24 @@ p {
     position: relative;
     top: 13px;
 }
+.iframeframe {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+
 
 
 
@@ -127,7 +146,7 @@ p {
 /* MUSIC PAGE */
 
 .musicpage {
-    background: url(../images/bgorange.png) center/100%;
+    background: url(images/bgorange.png) center/100%;
 }
 div .musicpage {
     align-items: flex-end;
@@ -172,21 +191,6 @@ div .musicpage figure .iframecap {
     position: relative;
     top: 130px;
 }
-.iframeframe {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-  }
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
 .albumcap {
     position: relative;
     top: 7px;
@@ -198,15 +202,20 @@ iframe {
 
 
 
+
+
+
+
 /* GIGS PAGE */
 
 .gigspage {
-    background: url(../images/bgteal.png) center/100%;
+    background: url(images/bgteal.png) center/100%;
 }
 .gigssubtitle {
     display: flex;
     justify-content: end;
-    margin-right: 50px;
+    margin: 0;
+    padding-right: 35px;
 }
 .upcoming {
     display: flex;
@@ -233,11 +242,17 @@ iframe {
     display: table-caption;
     caption-side: bottom;
 }
+.carocont {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
 .carousel {
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 90vh;
     position: relative;
-    margin-bottom: 50px;
+    margin: auto;
   }
   .carousel > ul {
     margin: 0;
@@ -308,7 +323,7 @@ iframe {
 /* PORTFOLIO PAGE */
 
 .cvpage {
-    background: url(../images/bgblue.png) center/100%;
+    background: url(images/bgblue.png) center/100%;
 }
 .cvsubtitle {
     color: white;
@@ -343,7 +358,7 @@ iframe {
 /* JOURNAL PAGE */
 
 .journalpage {
-    background: url(../images/bggray.png) center/100%;
+    background: url(images/bggray.png) center/100%;
 }
 .journalpage .textbox {
     display: block;
@@ -357,7 +372,7 @@ iframe {
 /* ABOUT PAGE */
 
 .aboutpage {
-    background: url(../images/bgyellow.png) center/100%;
+    background: url(images/bgyellow.png) center/100%;
 
 }
 .aboutpage h1 {
@@ -538,9 +553,6 @@ footer .mobile {
 
 
 
-/* asdf */
-
-
 
 
 /* MEDIA QUERIES */
@@ -582,7 +594,14 @@ footer .mobile {
 }
 @media screen and (max-width: 680px) { /* MOBILE */
     body {
-        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/270%
+        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
+    }
+    .pagetitle {
+        font: 3rem TypekaMix;
+    }
+    section .mobile {
+        gap: 30px;
+        margin: 50px;
     }
     div .mobile div a img {
         margin: -10px;
@@ -607,6 +626,9 @@ footer .mobile {
     body {
         background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
     }
+    div .mobile div a img {
+        max-width: 270px;
+    }
 }
 @media screen and (max-width: 420px) { /* MOBILEST */
     .rights {
@@ -620,5 +642,8 @@ footer .mobile {
     }
     body {
         background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/420%
+    }
+    .pagetitle {
+        font: 2.3rem TypekaMix;
     }
 }
