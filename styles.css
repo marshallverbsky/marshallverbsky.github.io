@@ -154,7 +154,7 @@ div .musicpage {
     display: flex;
     flex-direction: column;
     font: 100% OpenDyslexic;
-    gap: 40vh;
+    gap: 100px;
     padding: 13% 5% 15% 13%;
 }
 div .musicpage figure {
@@ -187,9 +187,12 @@ div .musicpage figure figcaption h2 {
     margin: 7px;
     text-transform: uppercase;
 }
-div .musicpage figure .iframecap {
-    position: relative;
-    top: 130px;
+div .musicpage .iframecap {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
 }
 .albumcap {
     position: relative;
@@ -199,7 +202,9 @@ div .musicpage figure .iframecap {
     background: none;
     margin-top: 7px;
 }
-
+.iframeframeframe {
+    width: 100%;
+}
 
 
 
@@ -217,11 +222,19 @@ div .musicpage figure .iframecap {
     margin: 0;
     padding-right: 35px;
 }
+.gigscont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 0% 15% 0%;
+    gap: 100px;
+}
 .upcoming {
+    width: 100%;
+}
+.upcoming p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
 }
 .upcoming figure {
     margin: 0;
@@ -246,7 +259,6 @@ div .musicpage figure .iframecap {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    /* height: 100vh; */
 }
 .carousel {
     width: 90vw;
@@ -330,7 +342,7 @@ div .musicpage figure .iframecap {
     filter: drop-shadow(2px 2px 5px black);
     display: flex;
     justify-content: end;
-    margin: 70px 50px 15px 0px;
+    margin: 70px 5% 15px 0px;
 }
 .portfolios {
     align-items: flex-end;
@@ -348,7 +360,10 @@ div .musicpage figure .iframecap {
     margin: 10px 20px -50px 20px
 }
 .cv {
-    text-align: end;
+    text-align: start;
+}
+.cvpage a {
+    color: white;
 }
 
 
@@ -391,10 +406,11 @@ div .musicpage figure .iframecap {
     color: white;
 }
 .aboutbox .happy {
-    width: 88vw;
+    width: 83vw;
     height: auto;
-    margin: 15px auto 0px auto;
-    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .aboutbox .polaroid {
     width: 30vw;
@@ -405,14 +421,11 @@ div .musicpage figure .iframecap {
 .aboutsubtitle {
     /* background-color: black; */
     display: flex;
-    padding-left: 30px;
+    padding-left: 5%;
 }
 .aboutpage .textboxbox {
     margin-bottom: 100px;
     justify-content: center;
-}
-.aboutpage .textbox {
-    padding: 75px;
 }
 .aboutpage .textbox p {
     font: 1.4rem OpenDyslexic;
@@ -425,7 +438,7 @@ div .musicpage figure .iframecap {
     color: white;
     background-color: rgba(0, 0, 0, .4);
     display: inline-block;
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 70px 0px;
 }
 .credits ul {
     margin: 0;
@@ -621,6 +634,9 @@ footer .mobile {
     div .errorpage div img {
         width: 400px;
     }
+    .carousel {
+        height: 50vh;
+    }
 }
 @media screen and (max-width: 480px) { /* MOBILER */
     body {
@@ -628,6 +644,9 @@ footer .mobile {
     }
     div .mobile div a img {
         max-width: 270px;
+    }
+    .aboutpage .textbox a {
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 420px) { /* MOBILEST */
@@ -645,5 +664,18 @@ footer .mobile {
     }
     .pagetitle {
         font: 2.3rem TypekaMix;
+    }
+    div .musicpage figure figcaption ul li a img {
+        width: 2rem;
+        height: 2rem;
+    }
+    div .musicpage {
+        padding: 15% 5% 20% 5%;
+    }
+    .musicpage h2 {
+        font-size: 1.3rem;
+    }
+    .aboutpage .textbox a {
+        font-size: .9rem;
     }
 }
