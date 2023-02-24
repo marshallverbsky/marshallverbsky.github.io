@@ -98,6 +98,7 @@ h1 {
 }
 h2 {
     font: 1.7rem TypekaMix;
+    filter: drop-shadow(3px 3px 3px black);
 }
 p {
     font: 1rem OpenDyslexic;
@@ -343,6 +344,7 @@ div .musicpage .iframecap {
     display: flex;
     justify-content: end;
     margin: 70px 5% 15px 0px;
+    /* width: 100%; */
 }
 .portfolios {
     align-items: flex-end;
