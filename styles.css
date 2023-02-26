@@ -372,7 +372,7 @@ div .musicpage .iframecap {
     padding: 0;
 }
 .cvpage audio {
-    margin: 50px;
+    margin: 50px 5% 50px 50px;
     padding: 20px;
     border: 10px ridge gray;
 }
@@ -664,6 +664,9 @@ footer .mobile {
     }
     .aboutpage .textbox a {
         font-size: 1rem;
+    }
+    .cvpage audio {
+        width: 60vw;
     }
 }
 @media screen and (max-width: 420px) { /* MOBILEST */
