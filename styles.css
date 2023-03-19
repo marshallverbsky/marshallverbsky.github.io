@@ -446,6 +446,8 @@ div .musicpage .iframecap {
 }
 .aboutpage .textbox p {
     font: 1.4rem OpenDyslexic;
+    /* width: 40vw; */
+    margin: 50px;
 }
 .aboutpage p a {
     color: white;
