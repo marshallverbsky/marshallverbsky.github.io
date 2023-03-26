@@ -42,15 +42,30 @@ If you've heard my stuff and want to collaborate, hear more, or just say hey, fe
         </div>
     </div> -->
     <div class="contactform">
-        <form action="action_page.php">
+        <!-- <form action="action_page.php">
             <label for="name">Name</label>
             <input class="shortform" type="text" id="name" name="name" placeholder="Your name...">
             <label for="email">Email</label>
             <input class="shortform" type="text" id="email" name="email" placeholder="Your email...">
             <label for="message">Message</label>
             <textarea name="message" id="message" placeholder="Your message..." style="height:200px"></textarea>
-            <!-- <input type="submit" value="Submit"> -->
-        </form>
+            <input type="submit" value="Submit"> 
+        </form> -->
+            <form action="https://formspree.io/f/xoqznbgz"  method="POST" >
+                <label>
+                    Name </label>
+                    <input class="shortform" id="text" type="name" name="name" placeholder="Your name...">
+                
+              <label>
+            Email </label>
+            <input class="shortform" id="text" type="email" name="email" placeholder="Your email...">
+        
+          <label>
+            Message </label>
+           <textarea name="message" placeholder="Your message..." style="height:150px"></textarea>
+          
+          <button type="submit">Send</button>
+</form>
     </div>
     <div class="credits">
         <ul>

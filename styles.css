@@ -481,7 +481,7 @@ textarea {
 .shortform {
     max-width: 300px;
 }
-input[type=text], select, textarea {
+input[id=text], select, textarea {
     width: 100%;
     padding: 12px; 
     border: 1px solid #ccc;
@@ -490,7 +490,7 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
   }
-input[type=submit] {
+button[type=submit] {
     background-color: #22c9fd;
     color: white;
     padding: 12px 20px;
@@ -498,7 +498,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
-  input[type=submit]:hover {
+  button[type=submit]:hover {
     background-color: #1fabd6;
   }
 
