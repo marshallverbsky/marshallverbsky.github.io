@@ -1,5 +1,12 @@
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
+const prev = document.querySelector("#prev")
+const next = document.querySelector("#next")
+
+
+
+
+
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1

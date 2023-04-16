@@ -327,6 +327,9 @@ div .musicpage .iframecap {
   .carousel-button.next {
     right: 1rem;
 }
+.carothumbs img{
+    width: 100px
+ }
 
 
 
@@ -375,6 +378,14 @@ div .musicpage .iframecap {
     margin: 50px 5% 50px 50px;
     padding: 20px;
     border: 10px ridge gray;
+}
+.cvaudio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 10%;
+    text-align: end;
 }
 
 
