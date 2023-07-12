@@ -238,7 +238,7 @@ div .musicpage .iframecap {
     justify-content: center;
 }
 .upcoming figure {
-    margin: 0;
+    margin: 5% 10% 5% 10%;
     border: 5px solid white;
     display: table;
 }
@@ -584,7 +584,7 @@ div .about {
     left: 75%;
     top: 50%
 }
-section div div a img:hover {
+.homepage div div a img:hover {
     transform: rotate(15deg);
 }
 
