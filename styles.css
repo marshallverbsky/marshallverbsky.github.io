@@ -546,6 +546,7 @@ div .mobile {
 div .desktop {
     display: flex;
     height: 70vh;
+    margin-left: 7vw;
     position: relative;
 }
 div .mobile div a img {
