@@ -58,6 +58,7 @@ header {
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    flex-wrap: nowrap;
 }
 div .home a img{
     width: 100px;
@@ -585,10 +586,102 @@ div .about {
     left: 75%;
     top: 50%
 }
-.homepage div div a img:hover {
+.homepage section div div a img:hover {
     transform: rotate(15deg);
 }
+.wssfd {
+    position: relative;
+    width: 50%;
+    max-width: 200px;
+  }
+ * {box-sizing: border-box}
+  .wssfd img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .wssfd:hover .overlay {
+    opacity: 1;
+}
 
+
+
+
+
+
+
+
+/* LYRICS PAGE */
+
+.lyricspage {
+    background: url(images/bgblack.png);
+    
+}
+.lyricspage header {
+    justify-content: end;
+}
+.lyrics {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0px 100px 0px;
+}
+.songtitle {
+    font: italic 150% serif;
+}
+ .lyricspage figure {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+ .lyricspage figure img {
+    height: 70vw;
+    align-self: center;
+    max-width: 700px;
+    max-height: 700px;
+}
+ .lyricspage figure figcaption ul {
+    background-color: rgba(255, 255, 32, 0.3);
+    border-radius: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+ .lyricspage figure figcaption ul li {
+    padding-top: 8px;
+}
+ .lyricspage figure figcaption ul li a img {
+    width: 3rem;
+    height: 3rem;
+}
+ .lyricspage figure figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 20px 0px 20px;
+}
+ .lyricspage figure figcaption h2 {
+    margin: 7px;
+    text-transform: uppercase;
+ }
 
 
 
@@ -672,8 +765,8 @@ footer .mobile {
     .albumcap {
         top: -50px;
     }
-}
-@media screen and (max-width: 680px) { /* MOBILE */
+    
+@media screen and (max-width: 719px) { /* MOBILE */
     body {
         background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
     }
@@ -705,8 +798,19 @@ footer .mobile {
     .carousel {
         height: 50vh;
     }
+    .homepage header {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 500px;
+    }
+    .wssfd {
+        width: 50%;
+        max-width: 300px;
+        
+    }
 }
-@media screen and (max-width: 480px) { /* MOBILER */
+}
+@media screen and (max-width: 553px) { /* MOBILER */
     body {
         background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
     }
@@ -720,7 +824,7 @@ footer .mobile {
         width: 60vw;
     }
 }
-@media screen and (max-width: 420px) { /* MOBILEST */
+@media screen and (max-width: 446px) { /* MOBILEST */
     .rights {
         display: none;
     }
