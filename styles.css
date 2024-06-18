@@ -207,7 +207,35 @@ div .musicpage .iframecap {
 .iframeframeframe {
     width: 100%;
 }
-
+.wssfd {
+    position: relative;
+    margin-bottom: 10px;
+    /* width: 50%; */
+    /* max-width: 200px; */
+  }
+ * {box-sizing: border-box}
+  .wssfd img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+  .wssfd:hover .overlay {
+    opacity: 1;
+}
 
 
 
@@ -589,35 +617,17 @@ div .about {
 .homepage section div div a img:hover {
     transform: rotate(15deg);
 }
-.wssfd {
-    position: relative;
-    width: 50%;
-    max-width: 200px;
-  }
- * {box-sizing: border-box}
-  .wssfd img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
+.bigtwitch a {
+    color: coral;
+    font: 1.8rem OpenDyslexic;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.407);
     text-align: center;
-  }
-  .wssfd:hover .overlay {
-    opacity: 1;
+    width: 300px;
+    -webkit-text-stroke: rgba(255, 178, 119, 0.748) 1px;
 }
-
 
 
 
@@ -802,11 +812,6 @@ footer .mobile {
         flex-wrap: wrap;
         justify-content: center;
         height: 500px;
-    }
-    .wssfd {
-        width: 50%;
-        max-width: 300px;
-        
     }
 }
 }
