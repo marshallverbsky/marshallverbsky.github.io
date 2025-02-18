@@ -67,7 +67,7 @@ div .home a img{
     margin: 17px 10px 0px 0px
 }
 .title {
-    margin-left: 12%;
+    margin-left: 6%;
 }
 
 
@@ -628,8 +628,12 @@ div .about {
     width: 300px;
     -webkit-text-stroke: rgba(255, 178, 119, 0.748) 1px;
 }
-
-
+.steopidity {
+    margin: 5% 5% 0 0;
+    font: 1rem TypekaMix;
+    text-align: center;
+    width: 25%;
+}
 
 
 
@@ -776,7 +780,7 @@ footer .mobile {
         top: -50px;
     }
     
-@media screen and (max-width: 719px) { /* MOBILE */
+@media screen and (max-width: 744px) { /* MOBILE */
     body {
         background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 10%/300%
     }
