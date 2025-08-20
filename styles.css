@@ -7,7 +7,7 @@ html {
     width: 100vw;
 }
 main {
-    padding-bottom: 4.5rem;
+    padding-bottom: 10rem;
 }
 
 
@@ -779,7 +779,7 @@ footer .mobile {
         display: inline-block;
     }
     body {
-        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 100%/100%
+        background: url(images/hillside\ gren\ long.jpeg) no-repeat 10% 90%/100%
     }
     div .errorpage div img {
         width: 300px;
